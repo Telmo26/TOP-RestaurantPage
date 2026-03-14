@@ -1,0 +1,44 @@
+.home-container {
+    grid-column: 2;
+    width: 100%;
+
+    display: grid;
+    gap: 40px 20px;
+    place-items: center;
+    grid-template: repeat(2, min-content) / 1fr 1fr;
+
+    height: 100%;
+    padding: 2rem 5rem;
+    margin: auto;
+
+    background-color: orange;
+    border-radius: 60px;
+    box-shadow: var(--shadow);
+}
+
+.home-container > *:not(h1) {
+    display: grid;
+    place-items: center;
+    text-align: justify;
+
+    height: min-content;
+
+    padding: 15px 50px;
+    background-color: var(--orange-yellow);
+    border: 5px dashed orangered;
+    border-radius: 30px;
+    background-color: var(--orange-yellow);
+}
+
+.home-container h1 {
+    grid-column: span 2;
+    text-align: center;
+    display: grid;
+    gap: 5px;
+}
+
+.home-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}

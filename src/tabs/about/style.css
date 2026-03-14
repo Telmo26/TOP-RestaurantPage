@@ -1,0 +1,34 @@
+.about-container {
+    grid-column: 2;
+    width: 100%;
+
+    display: grid;
+    gap: 40px;
+    place-items: center;
+    grid-template: repeat(2, 1fr) / 1fr;
+    
+    height: 100%;
+    padding: 2rem 5rem;
+    margin: auto;
+
+    background-color: orange;
+    border-radius: 60px;
+    box-shadow: var(--shadow);
+}
+
+.about-container div {
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+
+    padding: 15px 50px;
+    background-color: var(--orange-yellow);
+    border: 15px solid var(--dark-orange);
+    border-radius: 40px;
+
+    font-size: xx-large;
+}
+
+.about-container div:nth-last-child(-n + 2) {
+    grid-column: span 2;
+}
